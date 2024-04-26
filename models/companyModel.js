@@ -1,0 +1,1 @@
+const { connection } = require("../services/database.js");exports.createCompany = function(body, callback){    let sql = "INSERT INTO company SET ?";    connection.query(sql, [body], callback);}exports.verifyCompany = function (company, callback) {    let sql = "SELECT * FROM company WHERE code = ?";    connection.query(sql, [company], callback);};

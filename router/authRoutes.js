@@ -1,0 +1,1 @@
+const { Router } = require("express");const router = Router();const controller = require("../controllers/User.js");router.post("/authenticate", controller.authenticate);module.exports = router;

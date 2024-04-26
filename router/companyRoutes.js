@@ -1,0 +1,1 @@
+const { Router } = require("express");const router = Router();const controller = require("../controllers/Company.js");router.post("/createCompany", controller.createCompany);module.exports = router;
