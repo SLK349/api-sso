@@ -15,7 +15,7 @@ app.use("/api", authRouter);
 const companyRouter = require("./router/companyRoutes");
 app.use("/company", companyRouter);
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 9090
 app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT}`);
 });
